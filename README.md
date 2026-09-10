@@ -1,2 +1,2 @@
 # Natural-Holistic-Clinic
-Clinic
+
