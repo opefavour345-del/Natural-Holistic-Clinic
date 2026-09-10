@@ -1,0 +1,206 @@
+body { margin: 0; font-family: sans-serif; }
+
+/* Dark background behind drawer */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+.overlay.show { display: block; }
+
+/* The drawer itself */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -400px; /* HIDE it off screen to the right */
+  width: 320px;
+  height: 0
+  250px;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: left 0.3s ease; /* this makes it slide */
+  z-index: 1000;
+  padding: 20px;
+}
+
+.drawer.open {
+  left: 0; /* SLIDE it in */
+}
+
+.drawer-content input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+#closeDrawer { font-size: 28px; float: right; cursor: pointer; }
+
+.red {
+  color: #00C9FB;
+}
+
+.blue {
+  width: 100%;
+}
+
+.purple{
+  font-size: 35px;
+  color: #00ADD9;
+  border: none;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.pink{ 
+  color: #0097BC;
+  font-size: 35px;
+}
+
+.magenta{
+  color: #00CCFF;
+}
+
+.indigo{
+  border: none;
+  border-radius: 10px;
+  background-color: #DBF7FF;
+  color:#29D4FF;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.burgundy{ 
+  border-color:#00CCFF;
+  
+}
+
+.green{
+ font-weight: 900;
+ color: #00CCFF;
+ font-size: 15px;
+ transition: 0.8s;
+ b
+}
+
+.chocolate{
+  color: #007090;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+margin-top: 30px;
+}
+
+.brown {
+  font-size: 15px;
+  font-weight: 300px;
+  color: #00A3BC;
+  border-spacing: 10px;
+  background-color: #E8FFFD;
+  padding: 120px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-radius: 30px;
+  margin-top: 30px;
+  
+}
+
+.gold {
+  font-size: 15px;
+  font-weight: 300px;
+  color: #00A3BC;
+  border-spacing: 10px;
+  background-color: #E8FFFD;
+  padding: 50px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.yellow {
+  border: none;
+  background-color: #007BCC;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  top: 300px;
+  left: 150px;
+}
+
+.cyan {
+  padding: 50px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+}
+
+input {
+  padding: 15px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  width: 250px;
+  border: none;
+}
+
+.lime {
+  color: white;
+  background-color: #007BCC ;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+textarea {
+  padding: 50px;
+  padding-top: 10px;
+  padding-right: 5px;
+  width: 275px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 30px;
+}
+
+.wine {
+  padding: 35px;
+  background-color: #59BEFF;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.white {
+  color: white;
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+
+.grey:hover {
+    transform: translateY(-8px)
+}
+
+.grey:hover {
+   opacity: 0;
+  transform: translateY(40px);
+  transition: 0.7s ease
+}
+
+.grey:active {
+    opacity: 1;
+  transform: translateY(0);
+}
